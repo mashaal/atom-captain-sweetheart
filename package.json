@@ -1,0 +1,19 @@
+{
+  "name": "captain-sweetheart",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "tuff but sweet atom theme",
+  "license": "MIT",
+  "repository": "mashaal/atom-captain-sweetheart",
+  "author": {
+    "name": "omar mashaal",
+    "email": "omar@teacups.io",
+    "url": "teacups.io"
+  },
+  "keywords": [
+    "atom",
+    "atom-theme",
+    "theme",
+    "captain-sweetheart"
+  ]
+}

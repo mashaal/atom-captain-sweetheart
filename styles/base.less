@@ -1,0 +1,301 @@
+@import "syntax-variables";
+
+atom-text-editor, atom-text-editor .gutter {
+  background-color: @background;
+  color: @very-light-gray;
+}
+
+atom-text-editor.is-focused .cursor {
+  border-color: @lace;
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: @dark-gray;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+  background-color: @dark-gray;
+}
+
+atom-text-editor .invisible-character {
+  color: @gray;
+}
+
+atom-text-editor .indent-guide {
+  box-shadow: inset 1px 0 darken(@gray, 13%);
+}
+
+atom-text-editor .gutter .line-number.git-line-modified,
+atom-text-editor .gutter .line-number.git-line-removed,
+atom-text-editor .gutter .line-number.git-line-added {
+  border-left-width: 5px;
+  padding-left: calc(0.5em - 5px);
+}
+
+.markdown-preview > atom-text-editor {
+  background: @background;
+  border: 1px solid @background;
+}
+
+.markdown-preview atom-text-editor {
+  color: @black;
+}
+
+.wrap-guide {
+  background-color: @deep-green;
+}
+
+.syntax--comment {
+  color: @deep-green;
+}
+
+.syntax--string {
+  color: @deep-pink;
+}
+
+.syntax--constant.syntax--numeric {
+  color: @pink;
+}
+
+.syntax--constant.syntax--language {
+  color: @pink;
+}
+
+.syntax--constant.syntax--character, .syntax--constant.syntax--other {
+  color: @pink;
+}
+
+.syntax--variable {
+  color: @white;
+}
+
+.syntax--variable.syntax--other.syntax--readwrite.syntax--instance {
+  color: @deep-pink;
+}
+
+.syntax--constant.syntax--character.syntax--escaped, .syntax--constant.syntax--character.syntax--escape, .syntax--string .syntax--source, .syntax--string .syntax--source.syntax--ruby {
+  color: @blue;
+}
+
+.syntax--keyword {
+  color: @blue;
+}
+
+.syntax--storage {
+  color: @blue;
+}
+
+.syntax--storage.syntax--type {
+  font-style: italic;
+  color: @white;
+}
+
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: @green;
+}
+
+.syntax--entity.syntax--other.syntax--inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: @green;
+}
+
+.syntax--entity.syntax--name.syntax--function {
+  color: @green;
+}
+
+.syntax--variable.syntax--parameter {
+  font-style: italic;
+  color: @deep-pink;
+}
+
+.syntax--entity.syntax--name.syntax--tag {
+  color: @blue;
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: @green;
+}
+
+.syntax--support.syntax--function {
+  color: @white;
+}
+
+.syntax--support.syntax--constant {
+  color: darken(@white, 6%);
+}
+
+.syntax--support.syntax--type, .syntax--support.syntax--class {
+  font-style: italic;
+  color: @soft-white;
+}
+
+.syntax--support.syntax--other.syntax--variable {
+}
+
+.syntax--invalid {
+  color: @lace;
+  background-color: @blue;
+}
+
+.syntax--invalid.syntax--deprecated {
+  color: @lace;
+  background-color: @pink;
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @light-white;
+}
+
+.syntax--meta.syntax--diff, .syntax--meta.syntax--diff.syntax--header {
+  color: @deep-green;
+}
+
+.syntax--markup.syntax--deleted {
+  color: @blue;
+}
+
+.syntax--markup.syntax--inserted {
+  color: @green;
+}
+
+.syntax--markup.syntax--changed {
+  color: @dark-white;
+}
+
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match) {
+  color: @pink;
+}
+
+.syntax--entity.syntax--name.syntax--filename {
+  color: @dark-white;
+}
+
+.syntax--message.syntax--error {
+  color: #F83333;
+}
+
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json), .syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json) {
+  color: darken(@white, 7%);
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @white;
+}
+
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: @deep-pink;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @green;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @deep-pink;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @blue;
+}
+
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @pink;
+}
+
+.syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @green;
+}
+
+.syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: @deep-pink;
+}
+
+.syntax--heading.syntax--gfm {
+  color: @pink;
+}
+
+.syntax--entity.syntax--gfm {
+  color: @blue;
+}
+
+.syntax--markup.syntax--underline.syntax--link.syntax--gfm {
+  color: @white;
+}
+
+.syntax--variable.syntax--unordered.syntax--list.syntax--gfm {
+  color: @white;
+}
+
+.syntax--variable.syntax--ordered.syntax--list.syntax--gfm {
+  color: @white;
+}
+
+.syntax--variable.syntax--other.syntax--normal.syntax--shell {
+  color:@pink;
+}
+
+.syntax--markup.syntax--bold.syntax--gfm {
+  color: @deep-pink;
+}
+
+.syntax--markup.syntax--italic.syntax--gfm {
+  color: @deep-pink;
+}
+
+.syntax--markup.syntax--strike.syntax--gfm {
+  color: @red;
+}
+
+.syntax--markup.syntax--raw.syntax--gfm {
+  color: @green;
+}
+
+.syntax--code.syntax--gfm {
+  color: @green;
+}
+
+.syntax--code.syntax--gfm .syntax--link {
+    color: @white;
+}
+
+.syntax--critic.syntax--gfm.syntax--addition {
+  color: @green;
+}
+
+.syntax--critic.syntax--gfm.syntax--deletion {
+  color: @red;
+}
+
+.syntax--critic.syntax--gfm.syntax--substitution {
+  color:  @deep-pink;
+}
+
+.syntax--critic.syntax--gfm.syntax--highlight {
+  color: @blue;
+}
+
+.syntax--critic.syntax--gfm.syntax--comment {
+  color: @deep-green;
+}
+
+[data-zen="true"] atom-pane-container atom-pane .item-views {
+  background: @background !important;
+}
+
+atom-text-editor .highlight.find-result .region {
+  background: lighten(@dark-gray, 3%);
+  z-index: -1000;
+}
+
+atom-text-editor .highlight.current-result .region,
+atom-text-editor .highlight.current-result ~ .highlight.selection .region {
+  background: lighten(@dark-gray, 20%); // to distinguish from the other results
+  z-index: -1000;
+}
+
+atom-text-editor .bracket-matcher .region {
+  border-bottom: 1px dotted @green;
+  z-index: 100;
+}
